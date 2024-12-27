@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+/* Apply styles to the container */
+#container {
+  margin: 20px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  position: relative; /* Ensures pseudo-elements are relative to this container */
+}
+
+/* Add content before the container */
+#container::before {
+  content: "Before Element";
+  color: #f00;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Add content after the container */
+#container::after {
+  content: "After Element";
+  color: #f00;
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
